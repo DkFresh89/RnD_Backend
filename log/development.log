@@ -485,3 +485,408 @@ Processing by QuestionsController#index as HTML
 Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 2.5ms | Allocations: 9778)
 
 
+Started GET "/questions" for ::1 at 2021-04-17 21:24:51 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 17.6ms | ActiveRecord: 1.8ms | Allocations: 11113)
+
+
+Started GET "/login" for ::1 at 2021-04-17 22:23:07 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/login" for ::1 at 2021-04-17 22:23:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started OPTIONS "/questions/choose_game" for ::1 at 2021-04-19 12:45:13 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/questions/choose_game"):
+  
+Started OPTIONS "/questions/choose_game" for ::1 at 2021-04-19 12:46:16 -0400
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/questions/choose_game"):
+  
+Started GET "/" for 127.0.0.1 at 2021-04-19 12:48:31 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dougkerzner/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dougkerzner/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.3ms | Allocations: 315)
+Completed 200 OK in 31ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 2451)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 12:49:53 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms | Allocations: 3108)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 1)):
+  
+app/controllers/questions_controller.rb:11:in `choosegame'
+Started GET "/questions/choose_game" for ::1 at 2021-04-19 12:50:33 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for QuestionsController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/questions/choose_game" for ::1 at 2021-04-19 12:52:01 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"choose_game"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/questions_controller.rb:11:in `show'
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (choose_game) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:11:in `show'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.3ms | Allocations: 1616)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: choose_game):
+  
+app/controllers/questions_controller.rb:11:in `show'
+Started GET "/questions/choose_game" for ::1 at 2021-04-19 12:52:09 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"choose_game"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/questions_controller.rb:11:in `show'
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:11:in `show'
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 3.2ms | Allocations: 7444)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 12:54:16 -0400
+Processing by QuestionsController#choosegame as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 97)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 1)):
+  
+app/controllers/questions_controller.rb:16:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 12:55:39 -0400
+Processing by QuestionsController#choosegame as */*
+Completed 500 Internal Server Error in 0ms (Allocations: 123)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 1)):
+  
+app/controllers/questions_controller.rb:16:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 12:56:13 -0400
+Processing by QuestionsController#choosegame as */*
+Completed 500 Internal Server Error in 0ms (Allocations: 122)
+
+
+  
+ArgumentError (wrong number of arguments (given 3, expected 1)):
+  
+app/controllers/questions_controller.rb:17:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 12:56:25 -0400
+Processing by QuestionsController#choosegame as */*
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 12:58:50 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:01:14 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:01:52 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:02:12 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+Completed 500 Internal Server Error in 19187ms (ActiveRecord: 0.0ms | Allocations: 45958)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:19:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:02:59 -0400
+Processing by QuestionsController#choosegame as */*
+Completed 500 Internal Server Error in 12225ms (Allocations: 9909)
+
+
+  
+NameError (undefined local variable or method `uri' for #<QuestionsController:0x007f9975c26e90>
+Did you mean?  URI):
+  
+app/controllers/questions_controller.rb:21:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:03:28 -0400
+Processing by QuestionsController#choosegame as */*
+Completed 204 No Content in 66193ms (Allocations: 44534)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:04:46 -0400
+Processing by QuestionsController#choosegame as */*
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:07:56 -0400
+Completed 500 Internal Server Error in 189499ms (Allocations: 195588)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `choosegame'
+app/controllers/questions_controller.rb:27:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:07:58 -0400
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:07:58 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+[31mUnpermitted parameters: :num_of_questions, :category, :question[0m
+Completed 500 Internal Server Error in 5764ms (ActiveRecord: 7.2ms | Allocations: 82773)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `choosegame'
+app/controllers/questions_controller.rb:27:in `choosegame'
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9"}}
+[31mUnpermitted parameters: :num_of_questions, :category, :question[0m
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:08:59 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+[31mUnpermitted parameters: :num_of_questions, :category, :question[0m
+Completed 500 Internal Server Error in 25148ms (ActiveRecord: 0.3ms | Allocations: 46740)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f86413cfab8>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:09:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+[31mUnpermitted parameter: :question[0m
+Completed 500 Internal Server Error in 8910ms (ActiveRecord: 1.0ms | Allocations: 10584)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f86415f7b38>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:10:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+[31mUnpermitted parameter: :question[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.0ms | Allocations: 714)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f864034c2b8>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:11:38 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "question"=>"10", "category"=>"9"}
+Completed 500 Internal Server Error in 2ms (Allocations: 683)
+
+
+  
+NoMethodError (undefined method `question' for #<ActionController::Parameters:0x00007f8641507a20>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:13:56 -0400
+  
+SyntaxError (/Users/dougkerzner/Flatiron/Phase 4/Project/RnD_Backend/app/controllers/questions_controller.rb:35: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/questions_controller.rb:35: syntax error, unexpected end-of-input, expecting end
+app/controllers/questions_controller.rb:35: syntax error, unexpected end-of-input, expecting end
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:14:33 -0400
+  
+SyntaxError (/Users/dougkerzner/Flatiron/Phase 4/Project/RnD_Backend/app/controllers/questions_controller.rb:35: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/questions_controller.rb:35: syntax error, unexpected end-of-input, expecting end
+app/controllers/questions_controller.rb:35: syntax error, unexpected end-of-input, expecting end
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:15:03 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_question"=>"10", "category"=>"9", "question"=>nil}
+Completed 500 Internal Server Error in 1ms (Allocations: 108)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/questions_controller.rb:18:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:15:23 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_question"=>"10", "category"=>"9", "question"=>nil}
+[31mUnpermitted parameters: :num_of_question, :question[0m
+Completed 500 Internal Server Error in 3ms (Allocations: 705)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f8641624fe8>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:15:58 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_question"=>"10", "category"=>"9", "question"=>nil}
+Completed 500 Internal Server Error in 2ms (Allocations: 673)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f8641472970>):
+  
+app/controllers/questions_controller.rb:21:in `choosegame'
+Started GET "/choose_game" for 127.0.0.1 at 2021-04-19 13:23:09 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/choose_game"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-04-19 13:23:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:24:05 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_question"=>"10", "category"=>"9", "question"=>nil}
+Completed 500 Internal Server Error in 213064ms (ActiveRecord: 0.0ms | Allocations: 26166)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f86409948f0>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:27:43 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_question"=>"10", "category"=>"9", "question"=>nil}
+Completed 500 Internal Server Error in 19306ms (Allocations: 13009)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f86409863e0>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:28:17 -0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_question"=>"10", "category"=>"9", "question"=>nil}
+Completed 500 Internal Server Error in 75184ms (ActiveRecord: 0.0ms | Allocations: 50447)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f878dcc7ce0>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:29:32 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>nil}
+Completed 500 Internal Server Error in 1354ms (ActiveRecord: 0.0ms | Allocations: 13922)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f878f875d98>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:29:40 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>nil}
+Completed 500 Internal Server Error in 50069ms (Allocations: 21116)
+
+
+  
+NoMethodError (undefined method `num_of_questions' for #<ActionController::Parameters:0x00007f878e56c800>):
+  
+app/controllers/questions_controller.rb:20:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:30:40 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>nil}
+Completed 200 OK in 155318ms (Views: 0.7ms | Allocations: 16539)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:33:15 -0400
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:33:15 -0400
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:33:15 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9"}}
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9"}}
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 200 OK in 6170ms (Views: 11.5ms | ActiveRecord: 1.3ms | Allocations: 75676)
+
+
+Completed 200 OK in 6173ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 76884)
+
+
+Completed 200 OK in 8286ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 92430)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:33:48 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 200 OK in 91ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 1924)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:35:09 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"hard", "num_of_questions"=>"10", "category"=>"11", "question"=>{"category"=>"11", "difficulty"=>"hard"}}
+Completed 200 OK in 109ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1975)
+
+

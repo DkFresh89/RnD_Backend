@@ -17,7 +17,7 @@ questions = JSON.parse(resp)
 # fuck = questions["results"].each { |q| q[0] }
 
 fuckyes = questions["results"].each do |ques|
-    answers = []
+    # answers = []
 
     # ques["incorrect_answers"].each do |ic|
     #     answers << incorrect_answers
