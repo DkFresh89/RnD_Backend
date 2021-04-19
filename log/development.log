@@ -890,3 +890,658 @@ Processing by QuestionsController#choosegame as */*
 Completed 200 OK in 109ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1975)
 
 
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:39:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.4ms | Allocations: 2042)
+
+
+  
+NoMethodError (undefined method `results' for #<Hash:0x00007f878f07cb28>):
+  
+app/controllers/questions_controller.rb:31:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:40:29 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.3ms | Allocations: 5083)
+
+
+  
+NoMethodError (undefined method `results' for #<Hash:0x00007fd321a15440>):
+  
+app/controllers/questions_controller.rb:31:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:40:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 200 OK in 106ms (Views: 1.5ms | ActiveRecord: 1.0ms | Allocations: 1961)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:40:57 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 200 OK in 81ms (Views: 0.8ms | ActiveRecord: 1.5ms | Allocations: 1918)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:42:05 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.7ms | Allocations: 6512)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'type' for Question.):
+  
+app/controllers/questions_controller.rb:28:in `block in choosegame'
+app/controllers/questions_controller.rb:26:in `each'
+app/controllers/questions_controller.rb:26:in `choosegame'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:42:19 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 200 OK in 105ms (Views: 1.0ms | ActiveRecord: 1.0ms | Allocations: 1946)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:45:00 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"hard", "num_of_questions"=>"10", "category"=>"18", "question"=>{"category"=>"18", "difficulty"=>"hard"}}
+Completed 200 OK in 97ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1920)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 13:52:55 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"medium", "num_of_questions"=>"10", "category"=>"31", "question"=>{"category"=>"31", "difficulty"=>"medium"}}
+Completed 200 OK in 124ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 2040)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-19 15:17:02 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dougkerzner/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dougkerzner/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.5ms | Allocations: 315)
+Completed 200 OK in 43ms (Views: 14.7ms | Allocations: 2440)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "game_questions"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "game_questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_game_id" ON "game_questions" ("game_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_question_id" ON "game_questions" ("question_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "games"[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "games" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "game_type" varchar, "time" float, "num_of_questions" integer, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE INDEX "index_games_on_user_id" ON "games" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "category" varchar, "difficulty" varchar, "question" varchar, "correct_answer" varchar, "points" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "incorrect_answers" text, "question_type" varchar)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "high_score" integer, "rank" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "agame_questions" ("id" integer NOT NULL PRIMARY KEY, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_agame_questions_on_question_id" ON "agame_questions" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_agame_questions_on_game_id" ON "agame_questions" ("game_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "agame_questions" ("id","question_id","game_id","created_at","updated_at")
+                     SELECT "id","question_id","game_id","created_at","updated_at" FROM "game_questions"[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "game_questions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "game_questions" ("id" integer NOT NULL PRIMARY KEY, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a3982949c3"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_game_id" ON "game_questions" ("game_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_question_id" ON "game_questions" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "game_questions" ("id","question_id","game_id","created_at","updated_at")
+                     SELECT "id","question_id","game_id","created_at","updated_at" FROM "agame_questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "agame_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "agame_questions" ("id" integer NOT NULL PRIMARY KEY, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_agame_questions_on_question_id" ON "agame_questions" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_agame_questions_on_game_id" ON "agame_questions" ("game_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "agame_questions" ("id","question_id","game_id","created_at","updated_at")
+                     SELECT "id","question_id","game_id","created_at","updated_at" FROM "game_questions"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "game_questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "game_questions" ("id" integer NOT NULL PRIMARY KEY, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a3982949c3"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+, CONSTRAINT "fk_rails_2cb58d5309"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_game_id" ON "game_questions" ("game_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_question_id" ON "game_questions" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "game_questions" ("id","question_id","game_id","created_at","updated_at")
+                     SELECT "id","question_id","game_id","created_at","updated_at" FROM "agame_questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "agame_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "agames" ("id" integer NOT NULL PRIMARY KEY, "score" integer DEFAULT NULL, "game_type" varchar DEFAULT NULL, "time" float DEFAULT NULL, "num_of_questions" integer DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_agames_on_user_id" ON "agames" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "agames" ("id","score","game_type","time","num_of_questions","user_id","created_at","updated_at")
+                     SELECT "id","score","game_type","time","num_of_questions","user_id","created_at","updated_at" FROM "games"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "games"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "games" ("id" integer NOT NULL PRIMARY KEY, "score" integer DEFAULT NULL, "game_type" varchar DEFAULT NULL, "time" float DEFAULT NULL, "num_of_questions" integer DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_de9e6ea7f7"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_games_on_user_id" ON "games" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "games" ("id","score","game_type","time","num_of_questions","user_id","created_at","updated_at")
+                     SELECT "id","score","game_type","time","num_of_questions","user_id","created_at","updated_at" FROM "agames"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "agames"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210418010143)[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210417201001),
+(20210417201626),
+(20210417201918),
+(20210417202003),
+(20210418003238),
+(20210418004151),
+(20210418010014);
+
+[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-04-19 19:28:25.188245"], ["updated_at", "2021-04-19 19:28:25.188245"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "e94b92b29ef18814b368d66f34bc03b1c99c2f8f"], ["created_at", "2021-04-19 19:28:25.198944"], ["updated_at", "2021-04-19 19:28:25.198944"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "game_questions"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "game_questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_game_id" ON "game_questions" ("game_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_question_id" ON "game_questions" ("question_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "games"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "games" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "game_type" varchar, "time" float, "num_of_questions" integer, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_games_on_user_id" ON "games" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions"[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "category" varchar, "difficulty" varchar, "question" varchar, "correct_answer" varchar, "points" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "incorrect_answers" text, "question_type" varchar)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "high_score" integer, "rank" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "agame_questions" ("id" integer NOT NULL PRIMARY KEY, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_agame_questions_on_question_id" ON "agame_questions" ("question_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_agame_questions_on_game_id" ON "agame_questions" ("game_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "agame_questions" ("id","question_id","game_id","created_at","updated_at")
+                     SELECT "id","question_id","game_id","created_at","updated_at" FROM "game_questions"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "game_questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "game_questions" ("id" integer NOT NULL PRIMARY KEY, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a3982949c3"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_game_id" ON "game_questions" ("game_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_question_id" ON "game_questions" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "game_questions" ("id","question_id","game_id","created_at","updated_at")
+                     SELECT "id","question_id","game_id","created_at","updated_at" FROM "agame_questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "agame_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TEMPORARY TABLE "agame_questions" ("id" integer NOT NULL PRIMARY KEY, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_agame_questions_on_question_id" ON "agame_questions" ("question_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_agame_questions_on_game_id" ON "agame_questions" ("game_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "agame_questions" ("id","question_id","game_id","created_at","updated_at")
+                     SELECT "id","question_id","game_id","created_at","updated_at" FROM "game_questions"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "game_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "game_questions" ("id" integer NOT NULL PRIMARY KEY, "question_id" integer NOT NULL, "game_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_a3982949c3"
+FOREIGN KEY ("game_id")
+  REFERENCES "games" ("id")
+, CONSTRAINT "fk_rails_2cb58d5309"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_game_id" ON "game_questions" ("game_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_game_questions_on_question_id" ON "game_questions" ("question_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "game_questions" ("id","question_id","game_id","created_at","updated_at")
+                     SELECT "id","question_id","game_id","created_at","updated_at" FROM "agame_questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "agame_questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "agames" ("id" integer NOT NULL PRIMARY KEY, "score" integer DEFAULT NULL, "game_type" varchar DEFAULT NULL, "time" float DEFAULT NULL, "num_of_questions" integer DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_agames_on_user_id" ON "agames" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "agames" ("id","score","game_type","time","num_of_questions","user_id","created_at","updated_at")
+                     SELECT "id","score","game_type","time","num_of_questions","user_id","created_at","updated_at" FROM "games"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "games"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "games" ("id" integer NOT NULL PRIMARY KEY, "score" integer DEFAULT NULL, "game_type" varchar DEFAULT NULL, "time" float DEFAULT NULL, "num_of_questions" integer DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_de9e6ea7f7"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_games_on_user_id" ON "games" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "games" ("id","score","game_type","time","num_of_questions","user_id","created_at","updated_at")
+                     SELECT "id","score","game_type","time","num_of_questions","user_id","created_at","updated_at" FROM "agames"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "agames"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210418010143)[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210417201001),
+(20210417201626),
+(20210417201918),
+(20210417202003),
+(20210418003238),
+(20210418004151),
+(20210418010014);
+
+[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-04-19 19:28:25.333425"], ["updated_at", "2021-04-19 19:28:25.333425"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-04-19 19:28:25.339188"], ["key", "environment"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "e94b92b29ef18814b368d66f34bc03b1c99c2f8f"], ["created_at", "2021-04-19 19:28:25.357417"], ["updated_at", "2021-04-19 19:28:25.357417"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 15:28:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"hard", "num_of_questions"=>"10", "category"=>"11", "question"=>{"category"=>"11", "difficulty"=>"hard"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "What was the name of the planet in &quot;Aliens&quot;?"], ["correct_answer", "LV-426"], ["points", 10], ["created_at", "2021-04-19 19:28:38.006745"], ["updated_at", "2021-04-19 19:28:38.006745"], ["incorrect_answers", "[\"Weyland Yutani Corporation Base\", \"FR-838\", \"DI-621\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "What did the first moving picture depict?"], ["correct_answer", "A galloping horse"], ["points", 10], ["created_at", "2021-04-19 19:28:38.013833"], ["updated_at", "2021-04-19 19:28:38.013833"], ["incorrect_answers", "[\"A woman in a dress\", \"A man walking\", \"A crackling fire\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "In the 1964 film &quot;Zulu&quot;, what song does the British Army company sing before the final battle?"], ["correct_answer", "Men of Harlech"], ["points", 10], ["created_at", "2021-04-19 19:28:38.021380"], ["updated_at", "2021-04-19 19:28:38.021380"], ["incorrect_answers", "[\"Scotland the Brave\", \"Colonel Bogey March\", \"The British Grenadiers\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "&quot;Cube&quot;, &quot;Cube 2: Hypercube&quot; and &quot;Cube Zero&quot; were directed by the same person."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-19 19:28:38.027960"], ["updated_at", "2021-04-19 19:28:38.027960"], ["incorrect_answers", "[\"True\"]"], ["question_type", "boolean"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "What was the name of the actor who played Leatherface in the 1974 horror film, The Texas Chainsaw Massacre?"], ["correct_answer", "Gunnar Hansen"], ["points", 10], ["created_at", "2021-04-19 19:28:38.033552"], ["updated_at", "2021-04-19 19:28:38.033552"], ["incorrect_answers", "[\"Edwin Neal\", \"John Dugan\", \"Joe Bill Hogan\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "In what year did Clint Eastwood star as Inspector Harry Callahan in the film &quot;Dirty Harry&quot;?"], ["correct_answer", "1971"], ["points", 10], ["created_at", "2021-04-19 19:28:38.042433"], ["updated_at", "2021-04-19 19:28:38.042433"], ["incorrect_answers", "[\"1975\", \"1983\", \"1969\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "In what year does Jurassic World open in the &quot;Jurassic Park&quot; universe?"], ["correct_answer", "2005"], ["points", 10], ["created_at", "2021-04-19 19:28:38.048859"], ["updated_at", "2021-04-19 19:28:38.048859"], ["incorrect_answers", "[\"2007\", \"2015\", \"2020\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "Which 1994 film did Roger Ebert famously despise, saying &quot;I hated hated hated hated hated this movie&quot;."], ["correct_answer", "North"], ["points", 10], ["created_at", "2021-04-19 19:28:38.056844"], ["updated_at", "2021-04-19 19:28:38.056844"], ["incorrect_answers", "[\"3 Ninjas Kick Back\", \"The Santa Clause\", \"Richie Rich\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "Which boxer was famous for striking the gong in the introduction to J. Arthur Rank films?"], ["correct_answer", "Bombardier Billy Wells"], ["points", 10], ["created_at", "2021-04-19 19:28:38.064716"], ["updated_at", "2021-04-19 19:28:38.064716"], ["incorrect_answers", "[\"Freddie Mills\", \"Terry Spinks\", \"Don Cockell\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "incorrect_answers", "question_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Film"], ["difficulty", "hard"], ["question", "In the 1974 Christmas flick &quot;The Year Without a Santa Claus,&quot; what are the names of the two elves who help Mrs. Claus save Christmas?"], ["correct_answer", "Jingle &amp; Jangle"], ["points", 10], ["created_at", "2021-04-19 19:28:38.071011"], ["updated_at", "2021-04-19 19:28:38.071011"], ["incorrect_answers", "[\"Buddy &amp; Bobby\", \"Holly &amp; Jolly\", \"Snowflake &amp; Icicle\"]"], ["question_type", "multiple"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 207ms (Views: 1.2ms | ActiveRecord: 18.4ms | Allocations: 35749)
+
+
+Started GET "/questions/choose_game" for ::1 at 2021-04-19 15:28:44 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for QuestionsController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/questions" for ::1 at 2021-04-19 15:28:47 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (1.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 1.3ms | Allocations: 2685)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "incorrect_answers" text DEFAULT NULL, "question_type" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","incorrect_answers","question_type")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","incorrect_answers","question_type" FROM "questions"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "questions" ADD "incorrect_answers" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddQuestionTypeToQuestions (20210418010143)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL, "incorrect_answers" text DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers" FROM "questions"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "incorrect_answers" text DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","incorrect_answers")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","incorrect_answers" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210418010143"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddQuestionTypeToQuestions (20210418010143)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "questions" ADD "question_type" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210418010143"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "incorrect_answers" text DEFAULT NULL, "question_type" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","incorrect_answers","question_type")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","incorrect_answers","question_type" FROM "questions"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "questions" ADD "incorrect_answers" array[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL, "incorrect_answers"  DEFAULT NULL)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers" FROM "questions"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "questions" ADD "incorrect_answers" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL, "incorrect_answers" text DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers" FROM "questions"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type" FROM "aquestions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "questions" ADD "incorrect_answers" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL, "incorrect_answers" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers" FROM "questions"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "questions" ADD "incorrect_answers" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIncorrectAnswersToQuestions (20210418004151)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL, "incorrect_answers" text DEFAULT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type","incorrect_answers" FROM "questions"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "category" varchar DEFAULT NULL, "difficulty" varchar DEFAULT NULL, "question" varchar DEFAULT NULL, "correct_answer" varchar DEFAULT NULL, "points" integer DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "question_type" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type")
+                     SELECT "id","category","difficulty","question","correct_answer","points","created_at","updated_at","question_type" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20210418004151"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

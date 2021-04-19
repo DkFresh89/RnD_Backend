@@ -23,7 +23,23 @@ class QuestionsController < ApplicationController
 
         @questions = JSON.parse(resp)
 
-        render json: @questions
+        @questions["results"].each do |q|
+
+            question = {
+                category: q["category"],
+                question_type: q["type"],
+                difficulty: q["difficulty"],
+                question: q["question"],
+                correct_answer: q["correct_answer"],
+                incorrect_answers: q["incorrect_answers"],
+                points: 10
+            }
+
+            Question.create(question)
+
+        end 
+
+        render json: @questions["results"]
         # byebug
     end 
 
