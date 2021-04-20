@@ -8226,3 +8226,761 @@ Processing by QuestionsController#choosegame as */*
 Completed 200 OK in 133ms (Views: 0.6ms | ActiveRecord: 15.1ms | Allocations: 17933)
 
 
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 21:19:07 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   "], ["correct_answer", "Richard Branson"], ["points", 10], ["created_at", "2021-04-20 01:19:07.559349"], ["updated_at", "2021-04-20 01:19:07.559349"], ["question_type", "multiple"], ["incorrect_answers", "[\"Alan Sugar\", \"Donald Trump\", \"Bill Gates\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the Spanish word for &quot;donkey&quot;?"], ["correct_answer", "Burro"], ["points", 10], ["created_at", "2021-04-20 01:19:07.563189"], ["updated_at", "2021-04-20 01:19:07.563189"], ["question_type", "multiple"], ["incorrect_answers", "[\"Caballo\", \"Toro\", \"Perro\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "According to Sherlock Holmes, &quot;If you eliminate the impossible, whatever remains, however improbable, must be the...&quot;"], ["correct_answer", "Truth"], ["points", 10], ["created_at", "2021-04-20 01:19:07.566945"], ["updated_at", "2021-04-20 01:19:07.566945"], ["question_type", "multiple"], ["incorrect_answers", "[\"Answer\", \"Cause\", \"Source\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What was the first ever London Underground line to be built?"], ["correct_answer", "Metropolitan Line"], ["points", 10], ["created_at", "2021-04-20 01:19:07.573209"], ["updated_at", "2021-04-20 01:19:07.573209"], ["question_type", "multiple"], ["incorrect_answers", "[\"Circle Line\", \"Bakerloo Line\", \"Victoria Line\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Dihydrogen Monoxide was banned due to health risks after being discovered in 1983 inside swimming pools and drinking water."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 01:19:07.579915"], ["updated_at", "2021-04-20 01:19:07.579915"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which of the following is the IATA code for Manchester Airport?"], ["correct_answer", "MAN"], ["points", 10], ["created_at", "2021-04-20 01:19:07.586359"], ["updated_at", "2021-04-20 01:19:07.586359"], ["question_type", "multiple"], ["incorrect_answers", "[\"EGLL\", \"LHR\", \"EGCC\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is Cynophobia the fear of?"], ["correct_answer", "Dogs"], ["points", 10], ["created_at", "2021-04-20 01:19:07.591932"], ["updated_at", "2021-04-20 01:19:07.591932"], ["question_type", "multiple"], ["incorrect_answers", "[\"Birds\", \"Flying\", \"Germs\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Slovakia is a member of European Union-"], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 01:19:07.598659"], ["updated_at", "2021-04-20 01:19:07.598659"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which country has the union jack in its flag?"], ["correct_answer", "New Zealand"], ["points", 10], ["created_at", "2021-04-20 01:19:07.604292"], ["updated_at", "2021-04-20 01:19:07.604292"], ["question_type", "multiple"], ["incorrect_answers", "[\"South Africa\", \"Canada\", \"Hong Kong\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "When was the Playstation 3 released?"], ["correct_answer", "November 11, 2006"], ["points", 10], ["created_at", "2021-04-20 01:19:07.609181"], ["updated_at", "2021-04-20 01:19:07.609181"], ["question_type", "multiple"], ["incorrect_answers", "[\"January 8, 2007\", \"December 25, 2007\", \"July 16, 2006\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 148ms (Views: 0.8ms | ActiveRecord: 18.6ms | Allocations: 18386)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 21:42:10 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Where is the train station &quot;Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch&quot;?"], ["correct_answer", "Wales"], ["points", 10], ["created_at", "2021-04-20 01:42:11.010793"], ["updated_at", "2021-04-20 01:42:11.010793"], ["question_type", "multiple"], ["incorrect_answers", "[\"Moldova\", \"Czech Republic\", \"Denmark\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "On a dartboard, what number is directly opposite No. 1?"], ["correct_answer", "19"], ["points", 10], ["created_at", "2021-04-20 01:42:11.021801"], ["updated_at", "2021-04-20 01:42:11.021801"], ["question_type", "multiple"], ["incorrect_answers", "[\"20\", \"12\", \"15\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which one of these is not a typical European sword design?"], ["correct_answer", "Scimitar"], ["points", 10], ["created_at", "2021-04-20 01:42:11.026435"], ["updated_at", "2021-04-20 01:42:11.026435"], ["question_type", "multiple"], ["incorrect_answers", "[\"Falchion\", \"Ulfberht\", \"Flamberge\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "When you cry in space, your tears stick to your face."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 01:42:11.032817"], ["updated_at", "2021-04-20 01:42:11.032817"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which of the following card games revolves around numbers and basic math?"], ["correct_answer", "Uno"], ["points", 10], ["created_at", "2021-04-20 01:42:11.037156"], ["updated_at", "2021-04-20 01:42:11.037156"], ["question_type", "multiple"], ["incorrect_answers", "[\"Go Fish\", \"Twister\", \"Munchkin\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Dihydrogen Monoxide was banned due to health risks after being discovered in 1983 inside swimming pools and drinking water."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 01:42:11.041782"], ["updated_at", "2021-04-20 01:42:11.041782"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Scotland voted to become an independent country during the referendum from September 2014."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 01:42:11.046918"], ["updated_at", "2021-04-20 01:42:11.046918"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "When one is &quot;envious&quot;, they are said to be what color?"], ["correct_answer", "Green"], ["points", 10], ["created_at", "2021-04-20 01:42:11.051636"], ["updated_at", "2021-04-20 01:42:11.051636"], ["question_type", "multiple"], ["incorrect_answers", "[\"Red\", \"Blue\", \"Yellow\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What are Panama hats made out of?"], ["correct_answer", "Straw"], ["points", 10], ["created_at", "2021-04-20 01:42:11.057541"], ["updated_at", "2021-04-20 01:42:11.057541"], ["question_type", "multiple"], ["incorrect_answers", "[\"Silk\", \"Hemp\", \"Flax\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which of the following blood component forms a plug at the site of injuries?"], ["correct_answer", "Platelets"], ["points", 10], ["created_at", "2021-04-20 01:42:11.062408"], ["updated_at", "2021-04-20 01:42:11.062408"], ["question_type", "multiple"], ["incorrect_answers", "[\"Red blood cells\", \"White blood cells\", \"Blood plasma\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 186ms (Views: 1.8ms | ActiveRecord: 21.2ms | Allocations: 18373)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 21:54:46 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"31", "question"=>{"category"=>"31", "difficulty"=>"easy"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (2.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "Who was given the title &quot;Full Metal&quot; in the anime series &quot;Full Metal Alchemist&quot;?"], ["correct_answer", "Edward Elric"], ["points", 10], ["created_at", "2021-04-20 01:54:46.587157"], ["updated_at", "2021-04-20 01:54:46.587157"], ["question_type", "multiple"], ["incorrect_answers", "[\"Alphonse Elric\", \"Van Hohenheim\", \"Izumi Curtis\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "In the &quot;Toaru Kagaku no Railgun&quot; anime,  espers can only reach a maximum of level 6 in their abilities."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 01:54:46.594712"], ["updated_at", "2021-04-20 01:54:46.594712"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "What caused the titular mascot of Yo-Kai Watch, Jibanyan, to become a yokai?"], ["correct_answer", "Being run over by a truck"], ["points", 10], ["created_at", "2021-04-20 01:54:46.599773"], ["updated_at", "2021-04-20 01:54:46.599773"], ["question_type", "multiple"], ["incorrect_answers", "[\"Ate one too many chocobars\", \"Through a magical ritual\", \"When he put on the harmaki\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "Satella in &quot;Re:Zero&quot; is the witch of what?"], ["correct_answer", "Envy"], ["points", 10], ["created_at", "2021-04-20 01:54:46.604592"], ["updated_at", "2021-04-20 01:54:46.604592"], ["question_type", "multiple"], ["incorrect_answers", "[\"Pride\", \"Sloth\", \"Wrath\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "Who is the colossal titan in &quot;Attack On Titan&quot;?"], ["correct_answer", "Bertolt Hoover"], ["points", 10], ["created_at", "2021-04-20 01:54:46.608631"], ["updated_at", "2021-04-20 01:54:46.608631"], ["question_type", "multiple"], ["incorrect_answers", "[\"Reiner\", \"Eren\", \"Sasha\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "In the &quot;To Love-Ru&quot; series, Golden Darkness is sent to kill Lala Deviluke."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 01:54:46.613181"], ["updated_at", "2021-04-20 01:54:46.613181"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "In 2013, virtual pop-star Hatsune Miku had a sponsorship with which pizza chain?"], ["correct_answer", "Domino&#039;s"], ["points", 10], ["created_at", "2021-04-20 01:54:46.617118"], ["updated_at", "2021-04-20 01:54:46.617118"], ["question_type", "multiple"], ["incorrect_answers", "[\"Papa John&#039;s\", \"Pizza Hut\", \"Sabarro&#039;s\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "In Chobits, Hideki found Chii in his apartment."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 01:54:46.621840"], ["updated_at", "2021-04-20 01:54:46.621840"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (2.3ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "What animation studio produced &quot;Gurren Lagann&quot;?"], ["correct_answer", "Gainax"], ["points", 10], ["created_at", "2021-04-20 01:54:46.625818"], ["updated_at", "2021-04-20 01:54:46.625818"], ["question_type", "multiple"], ["incorrect_answers", "[\"Kyoto Animation\", \"Pierrot\", \"A-1 Pictures\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "Entertainment: Japanese Anime & Manga"], ["difficulty", "easy"], ["question", "What is the name of Funny Valentine&#039;s stand in Jojo&#039;s Bizarre Adventure Part 7, Steel Ball Run?"], ["correct_answer", "Dirty Deeds Done Dirt Cheap"], ["points", 10], ["created_at", "2021-04-20 01:54:46.632242"], ["updated_at", "2021-04-20 01:54:46.632242"], ["question_type", "multiple"], ["incorrect_answers", "[\"Filthy Acts Done For A Reasonable Price\", \"Civil War\", \"God Bless The USA\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 143ms (Views: 0.7ms | ActiveRecord: 20.3ms | Allocations: 18499)
+
+
+Started GET "/games" for 127.0.0.1 at 2021-04-19 22:07:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/games"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-04-19 22:07:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/games" for 127.0.0.1 at 2021-04-19 22:08:59 -0400
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/games" for 127.0.0.1 at 2021-04-19 22:09:03 -0400
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/questions" for 127.0.0.1 at 2021-04-19 22:09:13 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/questions_controller.rb:7:in `index'
+  [1m[36mQuestion Load (29.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:7:in `index'
+Completed 200 OK in 259ms (Views: 253.9ms | ActiveRecord: 33.1ms | Allocations: 184287)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:12:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the first book of the Old Testament?"], ["correct_answer", "Genesis"], ["points", 10], ["created_at", "2021-04-20 02:12:14.295220"], ["updated_at", "2021-04-20 02:12:14.295220"], ["question_type", "multiple"], ["incorrect_answers", "[\"Exodus\", \"Leviticus\", \"Numbers\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The Great Wall of China is visible from the moon."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 02:12:14.300781"], ["updated_at", "2021-04-20 02:12:14.300781"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "How would one say goodbye in Spanish?"], ["correct_answer", "Adi&oacute;s"], ["points", 10], ["created_at", "2021-04-20 02:12:14.305280"], ["updated_at", "2021-04-20 02:12:14.305280"], ["question_type", "multiple"], ["incorrect_answers", "[\" Hola\", \"Au Revoir\", \"Salir\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "French is an official language in Canada."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 02:12:14.310306"], ["updated_at", "2021-04-20 02:12:14.310306"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which sign of the zodiac is represented by the Crab?"], ["correct_answer", "Cancer"], ["points", 10], ["created_at", "2021-04-20 02:12:14.315444"], ["updated_at", "2021-04-20 02:12:14.315444"], ["question_type", "multiple"], ["incorrect_answers", "[\"Libra\", \"Virgo\", \"Sagittarius\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the shape of the toy invented by Hungarian professor Ernő Rubik?"], ["correct_answer", "Cube"], ["points", 10], ["created_at", "2021-04-20 02:12:14.319298"], ["updated_at", "2021-04-20 02:12:14.319298"], ["question_type", "multiple"], ["incorrect_answers", "[\"Sphere\", \"Cylinder\", \"Pyramid\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "How many colors are there in a rainbow?"], ["correct_answer", "7"], ["points", 10], ["created_at", "2021-04-20 02:12:14.323530"], ["updated_at", "2021-04-20 02:12:14.323530"], ["question_type", "multiple"], ["incorrect_answers", "[\"8\", \"9\", \"10\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which country has the union jack in its flag?"], ["correct_answer", "New Zealand"], ["points", 10], ["created_at", "2021-04-20 02:12:14.327831"], ["updated_at", "2021-04-20 02:12:14.327831"], ["question_type", "multiple"], ["incorrect_answers", "[\"South Africa\", \"Canada\", \"Hong Kong\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?"], ["correct_answer", "Helicopter"], ["points", 10], ["created_at", "2021-04-20 02:12:14.334863"], ["updated_at", "2021-04-20 02:12:14.334863"], ["question_type", "multiple"], ["incorrect_answers", "[\"Stealth Blimp\", \"Jet\", \"Space Capsule\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The mitochondria is the powerhouse of the cell."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 02:12:14.340968"], ["updated_at", "2021-04-20 02:12:14.340968"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 1176ms (Views: 0.8ms | ActiveRecord: 20.5ms | Allocations: 22447)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:15:22 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Gumbo is a stew that originated in Louisiana."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 02:15:23.015837"], ["updated_at", "2021-04-20 02:15:23.015837"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What word represents the letter &#039;T&#039; in the NATO phonetic alphabet?"], ["correct_answer", "Tango"], ["points", 10], ["created_at", "2021-04-20 02:15:23.020024"], ["updated_at", "2021-04-20 02:15:23.020024"], ["question_type", "multiple"], ["incorrect_answers", "[\"Target\", \"Taxi\", \"Turkey\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What type of animal was Harambe, who was shot after a child fell into it&#039;s enclosure at the Cincinnati Zoo?"], ["correct_answer", "Gorilla"], ["points", 10], ["created_at", "2021-04-20 02:15:23.023519"], ["updated_at", "2021-04-20 02:15:23.023519"], ["question_type", "multiple"], ["incorrect_answers", "[\"Tiger\", \"Panda\", \"Crocodile\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "You can legally drink alcohol while driving in Mississippi."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 02:15:23.027475"], ["updated_at", "2021-04-20 02:15:23.027475"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The Lego Group was founded in 1932."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 02:15:23.031435"], ["updated_at", "2021-04-20 02:15:23.031435"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "One of Donald Trump&#039;s 2016 Presidential Campaign promises was to build a border wall between the United States and Mexico."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 02:15:23.036560"], ["updated_at", "2021-04-20 02:15:23.036560"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?"], ["correct_answer", "Plum"], ["points", 10], ["created_at", "2021-04-20 02:15:23.042013"], ["updated_at", "2021-04-20 02:15:23.042013"], ["question_type", "multiple"], ["incorrect_answers", "[\"Apple\", \"Peach\", \"Pear\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the closest planet to our solar system&#039;s sun?"], ["correct_answer", "Mercury"], ["points", 10], ["created_at", "2021-04-20 02:15:23.047306"], ["updated_at", "2021-04-20 02:15:23.047306"], ["question_type", "multiple"], ["incorrect_answers", "[\"Mars\", \"Jupiter\", \"Earth\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which of the following is not the host of a program on NPR?"], ["correct_answer", "Ben Shapiro"], ["points", 10], ["created_at", "2021-04-20 02:15:23.052631"], ["updated_at", "2021-04-20 02:15:23.052631"], ["question_type", "multiple"], ["incorrect_answers", "[\"Terry Gross\", \"Ira Glass\", \"Peter Sagal\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "When was the Playstation 3 released?"], ["correct_answer", "November 11, 2006"], ["points", 10], ["created_at", "2021-04-20 02:15:23.058890"], ["updated_at", "2021-04-20 02:15:23.058890"], ["question_type", "multiple"], ["incorrect_answers", "[\"January 8, 2007\", \"December 25, 2007\", \"July 16, 2006\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 139ms (Views: 0.5ms | ActiveRecord: 15.4ms | Allocations: 17901)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:16:09 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"10", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?"], ["correct_answer", "Key"], ["points", 10], ["created_at", "2021-04-20 02:16:09.759711"], ["updated_at", "2021-04-20 02:16:09.759711"], ["question_type", "multiple"], ["incorrect_answers", "[\"Sword\", \"Pen\", \"Cellphone\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What does a funambulist walk on?"], ["correct_answer", "A Tight Rope"], ["points", 10], ["created_at", "2021-04-20 02:16:09.765636"], ["updated_at", "2021-04-20 02:16:09.765636"], ["question_type", "multiple"], ["incorrect_answers", "[\"Broken Glass\", \"Balls\", \"The Moon\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which American president appears on a one dollar bill?"], ["correct_answer", "George Washington"], ["points", 10], ["created_at", "2021-04-20 02:16:09.769965"], ["updated_at", "2021-04-20 02:16:09.769965"], ["question_type", "multiple"], ["incorrect_answers", "[\"Thomas Jefferson\", \"Abraham Lincoln\", \"Benjamin Franklin\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "It is automatically considered entrapment in the United States if the police sell you illegal substances without revealing themselves."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 02:16:09.776248"], ["updated_at", "2021-04-20 02:16:09.776248"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What type of animal was Harambe, who was shot after a child fell into it&#039;s enclosure at the Cincinnati Zoo?"], ["correct_answer", "Gorilla"], ["points", 10], ["created_at", "2021-04-20 02:16:09.782127"], ["updated_at", "2021-04-20 02:16:09.782127"], ["question_type", "multiple"], ["incorrect_answers", "[\"Tiger\", \"Panda\", \"Crocodile\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "A scientific study on peanuts in bars found traces of over 100 unique specimens of urine."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 02:16:09.821565"], ["updated_at", "2021-04-20 02:16:09.821565"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;"], ["correct_answer", "Print"], ["points", 10], ["created_at", "2021-04-20 02:16:09.826972"], ["updated_at", "2021-04-20 02:16:09.826972"], ["question_type", "multiple"], ["incorrect_answers", "[\"Digest\", \"Look\", \"Read\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What machine element is located in the center of fidget spinners?"], ["correct_answer", "Bearings"], ["points", 10], ["created_at", "2021-04-20 02:16:09.831479"], ["updated_at", "2021-04-20 02:16:09.831479"], ["question_type", "multiple"], ["incorrect_answers", "[\"Axles\", \"Gears\", \"Belts\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the French word for &quot;fish&quot;?"], ["correct_answer", "poisson"], ["points", 10], ["created_at", "2021-04-20 02:16:09.835967"], ["updated_at", "2021-04-20 02:16:09.835967"], ["question_type", "multiple"], ["incorrect_answers", "[\"fiche\", \"escargot\", \"mer\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "When was the Playstation 3 released?"], ["correct_answer", "November 11, 2006"], ["points", 10], ["created_at", "2021-04-20 02:16:09.842245"], ["updated_at", "2021-04-20 02:16:09.842245"], ["question_type", "multiple"], ["incorrect_answers", "[\"January 8, 2007\", \"December 25, 2007\", \"July 16, 2006\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 176ms (Views: 0.6ms | ActiveRecord: 17.1ms | Allocations: 17930)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:19:19 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "How many furlongs are there in a mile?"], ["correct_answer", "Eight"], ["points", 10], ["created_at", "2021-04-20 02:19:19.319725"], ["updated_at", "2021-04-20 02:19:19.319725"], ["question_type", "multiple"], ["incorrect_answers", "[\"Two\", \"Four\", \"Six\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The mitochondria is the powerhouse of the cell."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 02:19:19.323278"], ["updated_at", "2021-04-20 02:19:19.323278"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 104ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 4277)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:22:07 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "&quot;27 Club&quot; is a term used to refer to a list of famous actors, musicians, and artists who died at the age of 27."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 02:22:07.743399"], ["updated_at", "2021-04-20 02:22:07.743399"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 97ms (Views: 0.3ms | ActiveRecord: 2.1ms | Allocations: 2579)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:22:35 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is &quot;dabbing&quot;?"], ["correct_answer", "A dance"], ["points", 10], ["created_at", "2021-04-20 02:22:35.211556"], ["updated_at", "2021-04-20 02:22:35.211556"], ["question_type", "multiple"], ["incorrect_answers", "[\"A medical procedure\", \"A sport\", \"A language\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the name of the Jewish New Year?"], ["correct_answer", "Rosh Hashanah"], ["points", 10], ["created_at", "2021-04-20 02:22:35.216784"], ["updated_at", "2021-04-20 02:22:35.216784"], ["question_type", "multiple"], ["incorrect_answers", "[\"Elul\", \"New Year\", \"Succoss\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 103ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 4298)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:25:56 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.2ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What nuts are used in the production of marzipan?"], ["correct_answer", "Almonds"], ["points", 10], ["created_at", "2021-04-20 02:25:57.477030"], ["updated_at", "2021-04-20 02:25:57.477030"], ["question_type", "multiple"], ["incorrect_answers", "[\"Peanuts\", \"Walnuts\", \"Pistachios\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "When someone is cowardly, they are said to have what color belly?"], ["correct_answer", "Yellow"], ["points", 10], ["created_at", "2021-04-20 02:25:57.482756"], ["updated_at", "2021-04-20 02:25:57.482756"], ["question_type", "multiple"], ["incorrect_answers", "[\"Green\", \"Red\", \"Blue\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 1113ms (Views: 0.3ms | ActiveRecord: 4.8ms | Allocations: 4293)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:26:54 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Foie gras is a French delicacy typically made from what part of a duck or goose?"], ["correct_answer", "Liver"], ["points", 10], ["created_at", "2021-04-20 02:26:54.666570"], ["updated_at", "2021-04-20 02:26:54.666570"], ["question_type", "multiple"], ["incorrect_answers", "[\"Heart\", \"Stomach\", \"Intestines\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The drug cartel run by Pablo Escobar originated in which South American city?"], ["correct_answer", "Medell&iacute;n"], ["points", 10], ["created_at", "2021-04-20 02:26:54.671348"], ["updated_at", "2021-04-20 02:26:54.671348"], ["question_type", "multiple"], ["incorrect_answers", "[\"Bogot&aacute;\", \"Quito\", \"Cali\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 97ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 4304)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:30:50 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.0ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which one of these is not a typical European sword design?"], ["correct_answer", "Scimitar"], ["points", 10], ["created_at", "2021-04-20 02:30:50.589424"], ["updated_at", "2021-04-20 02:30:50.589424"], ["question_type", "multiple"], ["incorrect_answers", "[\"Falchion\", \"Ulfberht\", \"Flamberge\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "In which fast food chain can you order a Jamocha Shake?"], ["correct_answer", "Arby&#039;s"], ["points", 10], ["created_at", "2021-04-20 02:30:50.594916"], ["updated_at", "2021-04-20 02:30:50.594916"], ["question_type", "multiple"], ["incorrect_answers", "[\"McDonald&#039;s\", \"Burger King\", \"Wendy&#039;s\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 97ms (Views: 0.3ms | ActiveRecord: 3.7ms | Allocations: 4310)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:32:59 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "How tall is the Burj Khalifa?"], ["correct_answer", "2,722 ft"], ["points", 10], ["created_at", "2021-04-20 02:32:59.460579"], ["updated_at", "2021-04-20 02:32:59.460579"], ["question_type", "multiple"], ["incorrect_answers", "[\"2,717 ft\", \"2,546 ft\", \"3,024 ft\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The drug cartel run by Pablo Escobar originated in which South American city?"], ["correct_answer", "Medell&iacute;n"], ["points", 10], ["created_at", "2021-04-20 02:32:59.466377"], ["updated_at", "2021-04-20 02:32:59.466377"], ["question_type", "multiple"], ["incorrect_answers", "[\"Bogot&aacute;\", \"Quito\", \"Cali\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 103ms (Views: 0.3ms | ActiveRecord: 4.4ms | Allocations: 4304)
+
+
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:33:52 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the shape of the toy invented by Hungarian professor Ernő Rubik?"], ["correct_answer", "Cube"], ["points", 10], ["created_at", "2021-04-20 02:33:52.193211"], ["updated_at", "2021-04-20 02:33:52.193211"], ["question_type", "multiple"], ["incorrect_answers", "[\"Sphere\", \"Cylinder\", \"Pyramid\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "When someone is inexperienced they are said to be what color?"], ["correct_answer", "Green"], ["points", 10], ["created_at", "2021-04-20 02:33:52.200112"], ["updated_at", "2021-04-20 02:33:52.200112"], ["question_type", "multiple"], ["incorrect_answers", "[\"Red\", \"Blue\", \"Yellow\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 104ms (Views: 0.3ms | ActiveRecord: 4.5ms | Allocations: 4292)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:37:15 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the Spanish word for &quot;donkey&quot;?"], ["correct_answer", "Burro"], ["points", 10], ["created_at", "2021-04-20 02:37:15.190612"], ["updated_at", "2021-04-20 02:37:15.190612"], ["question_type", "multiple"], ["incorrect_answers", "[\"Caballo\", \"Toro\", \"Perro\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 99ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 2592)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:39:16 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.1ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What company developed the vocaloid Hatsune Miku?"], ["correct_answer", "Crypton Future Media"], ["points", 10], ["created_at", "2021-04-20 02:39:17.099096"], ["updated_at", "2021-04-20 02:39:17.099096"], ["question_type", "multiple"], ["incorrect_answers", "[\"Sega\", \"Sony\", \"Yamaha Corporation\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 113ms (Views: 1.3ms | ActiveRecord: 2.8ms | Allocations: 2587)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:39:57 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "According to Sherlock Holmes, &quot;If you eliminate the impossible, whatever remains, however improbable, must be the...&quot;"], ["correct_answer", "Truth"], ["points", 10], ["created_at", "2021-04-20 02:39:57.946344"], ["updated_at", "2021-04-20 02:39:57.946344"], ["question_type", "multiple"], ["incorrect_answers", "[\"Answer\", \"Cause\", \"Source\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 97ms (Views: 0.5ms | ActiveRecord: 2.5ms | Allocations: 2592)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:41:19 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What are Panama hats made out of?"], ["correct_answer", "Straw"], ["points", 10], ["created_at", "2021-04-20 02:41:19.608455"], ["updated_at", "2021-04-20 02:41:19.608455"], ["question_type", "multiple"], ["incorrect_answers", "[\"Silk\", \"Hemp\", \"Flax\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 95ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 2589)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:41:38 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is on display in the Madame Tussaud&#039;s museum in London?"], ["correct_answer", "Wax sculptures"], ["points", 10], ["created_at", "2021-04-20 02:41:38.791168"], ["updated_at", "2021-04-20 02:41:38.791168"], ["question_type", "multiple"], ["incorrect_answers", "[\"Designer clothing\", \"Unreleased film reels\", \"Vintage cars\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 88ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 2591)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:42:03 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Dihydrogen Monoxide was banned due to health risks after being discovered in 1983 inside swimming pools and drinking water."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 02:42:03.936613"], ["updated_at", "2021-04-20 02:42:03.936613"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 99ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 2570)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:46:48 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Five dollars is worth how many nickles?"], ["correct_answer", "100"], ["points", 10], ["created_at", "2021-04-20 02:46:49.045359"], ["updated_at", "2021-04-20 02:46:49.045359"], ["question_type", "multiple"], ["incorrect_answers", "[\"50\", \"25\", \"69\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 114ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 2587)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:47:32 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the French word for &quot;fish&quot;?"], ["correct_answer", "poisson"], ["points", 10], ["created_at", "2021-04-20 02:47:32.941779"], ["updated_at", "2021-04-20 02:47:32.941779"], ["question_type", "multiple"], ["incorrect_answers", "[\"fiche\", \"escargot\", \"mer\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 116ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 2595)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:50:25 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The Flag of the European Union has how many stars on it?"], ["correct_answer", "12"], ["points", 10], ["created_at", "2021-04-20 02:50:25.916566"], ["updated_at", "2021-04-20 02:50:25.916566"], ["question_type", "multiple"], ["incorrect_answers", "[\"10\", \"14\", \"16\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 101ms (Views: 0.5ms | ActiveRecord: 2.7ms | Allocations: 2587)
+
+
