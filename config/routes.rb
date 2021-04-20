@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   post '/questions/choose_game', to: 'questions#choosegame'
   post '/games/game_over', to: 'games#gameover'
+  post '/users/new_user', to: 'users#newuser'
+  post '/users/login', to: 'users#login'
 end
