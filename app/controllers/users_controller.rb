@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+
+    
     # def newuser
         
     #     @user = params.permit!()
@@ -19,13 +21,28 @@ class UsersController < ApplicationController
         @user = User.all
     end
 
+    # # POST /login
+    # def login
+    #   # find the user based on their username
+    #   host = Host.find_by(email: params[:email])
+    #   # check their password
+    #   if host && host.authenticate(params[:password])
+    #     # save the user id in an encoded token
+    #     token = JWT.encode({ host_id: host.id }, 'my$ecretK3y', 'HS256')
+    #     render json: { host: serialize_model(host, include: ['properties']), token: token }
+    #   else
+    #     render json: { errors: ["Invalid username or password"] }, status: :unauthorized
+    #   end
+    # end
 
 
         # POST /login
     def login
+        
         user = User.find_by(username: params[:username])
+        # byebug
         if user && user.authenticate(params[:password])
-        token = JsonWebToken.encode({ user_id: user.id })
+        token = JsonWebToken.encode({ user_id: user.id }, 'my$ecretK3y', 'HS256')
         render json: { user: user, token: token }
         else
         render json: { errors: ["Invalid username or password"] }, status: :unauthorized

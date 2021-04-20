@@ -22,7 +22,7 @@ class QuestionsController < ApplicationController
         resp = Net::HTTP.get(uri)
 
         @questions = JSON.parse(resp)
-        @question_arr = []
+        
         @questions["results"].each do |q|
 
             question = {
@@ -35,14 +35,13 @@ class QuestionsController < ApplicationController
                 points: 10
             }
 
-            @new_question = Question.create(question)
+            Question.create(question)
 
-            @questions_arr << @new_question
+            
 
         end 
 
-        render json: @question_arr
-        # @questions["results"]
+        render json: @questions["results"]
         # byebug
     end 
 
