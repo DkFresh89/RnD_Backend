@@ -8984,3 +8984,2262 @@ Processing by QuestionsController#choosegame as */*
 Completed 200 OK in 101ms (Views: 0.5ms | ActiveRecord: 2.7ms | Allocations: 2587)
 
 
+Started POST "/questions/choose_game" for 127.0.0.1 at 2021-04-19 22:51:33 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.9ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is &quot;dabbing&quot;?"], ["correct_answer", "A dance"], ["points", 10], ["created_at", "2021-04-20 02:51:33.520959"], ["updated_at", "2021-04-20 02:51:33.520959"], ["question_type", "multiple"], ["incorrect_answers", "[\"A medical procedure\", \"A sport\", \"A language\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.0ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which of the following is the IATA code for Manchester Airport?"], ["correct_answer", "MAN"], ["points", 10], ["created_at", "2021-04-20 02:51:33.528328"], ["updated_at", "2021-04-20 02:51:33.528328"], ["question_type", "multiple"], ["incorrect_answers", "[\"EGLL\", \"LHR\", \"EGCC\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 99ms (Views: 1.1ms | ActiveRecord: 4.2ms | Allocations: 4298)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:56:56 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is &quot;dabbing&quot;?"], ["correct_answer", "A dance"], ["points", 10], ["created_at", "2021-04-20 02:56:56.438961"], ["updated_at", "2021-04-20 02:56:56.438961"], ["question_type", "multiple"], ["incorrect_answers", "[\"A medical procedure\", \"A sport\", \"A language\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Who is the author of Jurrasic Park?"], ["correct_answer", "Michael Crichton"], ["points", 10], ["created_at", "2021-04-20 02:56:56.444013"], ["updated_at", "2021-04-20 02:56:56.444013"], ["question_type", "multiple"], ["incorrect_answers", "[\"Peter Benchley\", \"Chuck Paluhniuk\", \"Irvine Welsh\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 105ms (Views: 0.4ms | ActiveRecord: 4.7ms | Allocations: 4298)
+
+
+Started POST "/games" for ::1 at 2021-04-19 22:57:07 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:57:07 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:57:07 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:57:07 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:58:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Where is the train station &quot;Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch&quot;?"], ["correct_answer", "Wales"], ["points", 10], ["created_at", "2021-04-20 02:58:09.271975"], ["updated_at", "2021-04-20 02:58:09.271975"], ["question_type", "multiple"], ["incorrect_answers", "[\"Moldova\", \"Czech Republic\", \"Denmark\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The Great Wall of China is visible from the moon."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 02:58:09.276317"], ["updated_at", "2021-04-20 02:58:09.276317"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 1117ms (Views: 0.3ms | ActiveRecord: 5.0ms | Allocations: 13941)
+
+
+Started POST "/games" for ::1 at 2021-04-19 22:58:20 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:58:20 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:58:20 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:58:20 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games/" for ::1 at 2021-04-19 22:58:42 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games/" for ::1 at 2021-04-19 22:58:42 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games/" for ::1 at 2021-04-19 22:58:42 -0400
+Started POST "/games/" for ::1 at 2021-04-19 22:58:42 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games" for ::1 at 2021-04-19 22:58:43 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games" for ::1 at 2021-04-19 22:58:43 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:58:43 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:58:43 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 22:58:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"2", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "How many furlongs are there in a mile?"], ["correct_answer", "Eight"], ["points", 10], ["created_at", "2021-04-20 02:58:58.235028"], ["updated_at", "2021-04-20 02:58:58.235028"], ["question_type", "multiple"], ["incorrect_answers", "[\"Two\", \"Four\", \"Six\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which of the following is not the host of a program on NPR?"], ["correct_answer", "Ben Shapiro"], ["points", 10], ["created_at", "2021-04-20 02:58:58.240588"], ["updated_at", "2021-04-20 02:58:58.240588"], ["question_type", "multiple"], ["incorrect_answers", "[\"Terry Gross\", \"Ira Glass\", \"Peter Sagal\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 113ms (Views: 0.4ms | ActiveRecord: 5.6ms | Allocations: 8798)
+
+
+Started POST "/games" for ::1 at 2021-04-19 22:59:19 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:59:19 -0400
+Started POST "/games" for ::1 at 2021-04-19 22:59:19 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games" for ::1 at 2021-04-19 22:59:19 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:00:15 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.2ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which American president appears on a one dollar bill?"], ["correct_answer", "George Washington"], ["points", 10], ["created_at", "2021-04-20 03:00:15.883333"], ["updated_at", "2021-04-20 03:00:15.883333"], ["question_type", "multiple"], ["incorrect_answers", "[\"Thomas Jefferson\", \"Abraham Lincoln\", \"Benjamin Franklin\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 101ms (Views: 0.3ms | ActiveRecord: 4.4ms | Allocations: 12215)
+
+
+Started POST "/games" for ::1 at 2021-04-19 23:00:18 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:00:18 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:00:18 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:00:18 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:01:00 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "According to the nursery rhyme, what fruit did Little Jack Horner pull out of his Christmas pie?"], ["correct_answer", "Plum"], ["points", 10], ["created_at", "2021-04-20 03:01:01.155727"], ["updated_at", "2021-04-20 03:01:01.155727"], ["question_type", "multiple"], ["incorrect_answers", "[\"Apple\", \"Peach\", \"Pear\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 121ms (Views: 0.4ms | ActiveRecord: 3.1ms | Allocations: 11320)
+
+
+Started POST "/games" for ::1 at 2021-04-19 23:01:06 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:01:06 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:01:06 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games" for ::1 at 2021-04-19 23:01:06 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:01:21 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:01:21 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:01:21 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:01:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 80581ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 53191)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:02:42 -0400
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:02:42 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by GamesController#gameover as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by GamesController#gameover as */*
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 262)
+
+
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 243)
+
+
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 244)
+
+
+Processing by QuestionsController#choosegame as */*
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:02:42 -0400
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:02:42 -0400
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:02:42 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9"}}
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Processing by QuestionsController#choosegame as */*
+Processing by QuestionsController#choosegame as */*
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "If you are caught &quot;Goldbricking&quot;, what are you doing wrong?"], ["correct_answer", "Slacking"], ["points", 10], ["created_at", "2021-04-20 03:02:42.878446"], ["updated_at", "2021-04-20 03:02:42.878446"], ["question_type", "multiple"], ["incorrect_answers", "[\"Smoking\", \"Stealing\", \"Cheating\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.0ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the most common surname Wales?"], ["correct_answer", "Jones"], ["points", 10], ["created_at", "2021-04-20 03:02:42.882597"], ["updated_at", "2021-04-20 03:02:42.882597"], ["question_type", "multiple"], ["incorrect_answers", "[\"Williams\", \"Davies\", \"Evans\"]"]]
+Completed 200 OK in 121ms (Views: 0.7ms | ActiveRecord: 2.6ms | Allocations: 11912)
+
+
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 120ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 11814)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:02:42 -0400
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:02:42 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Dihydrogen Monoxide was banned due to health risks after being discovered in 1983 inside swimming pools and drinking water."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 03:02:42.986482"], ["updated_at", "2021-04-20 03:02:42.986482"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 92ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 3267)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Bulls are attracted to the color red."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 03:02:43.880389"], ["updated_at", "2021-04-20 03:02:43.880389"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 1118ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 35891)
+
+
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.2ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Foie gras is a French delicacy typically made from what part of a duck or goose?"], ["correct_answer", "Liver"], ["points", 10], ["created_at", "2021-04-20 03:02:43.886114"], ["updated_at", "2021-04-20 03:02:43.886114"], ["question_type", "multiple"], ["incorrect_answers", "[\"Heart\", \"Stomach\", \"Intestines\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 1126ms (Views: 0.4ms | ActiveRecord: 5.4ms | Allocations: 36524)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.9ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;"], ["correct_answer", "Print"], ["points", 10], ["created_at", "2021-04-20 03:02:43.933060"], ["updated_at", "2021-04-20 03:02:43.933060"], ["question_type", "multiple"], ["incorrect_answers", "[\"Digest\", \"Look\", \"Read\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 1168ms (Views: 0.3ms | ActiveRecord: 4.7ms | Allocations: 38597)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is the first book of the Old Testament?"], ["correct_answer", "Genesis"], ["points", 10], ["created_at", "2021-04-20 03:02:43.988500"], ["updated_at", "2021-04-20 03:02:43.988500"], ["question_type", "multiple"], ["incorrect_answers", "[\"Exodus\", \"Leviticus\", \"Numbers\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 1096ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 28956)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:02:57 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Red Vines is a brand of what type of candy?"], ["correct_answer", "Licorice"], ["points", 10], ["created_at", "2021-04-20 03:02:58.193181"], ["updated_at", "2021-04-20 03:02:58.193181"], ["question_type", "multiple"], ["incorrect_answers", "[\"Lollipop\", \"Chocolate\", \"Bubblegum\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 1150ms (Views: 0.6ms | ActiveRecord: 2.0ms | Allocations: 2591)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:03:03 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:03:03 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:03:03 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:03:03 -0400
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.9ms | Allocations: 254)
+
+
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games" for ::1 at 2021-04-19 23:03:35 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:03:35 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:03:35 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:03:35 -0400
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 262)
+
+
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 242)
+
+
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:03:39 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.7ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "A pasodoble is a type of Italian pasta sauce."], ["correct_answer", "False"], ["points", 10], ["created_at", "2021-04-20 03:03:39.593713"], ["updated_at", "2021-04-20 03:03:39.593713"], ["question_type", "boolean"], ["incorrect_answers", "[\"True\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 108ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 7108)
+
+
+Started POST "/games" for ::1 at 2021-04-19 23:03:42 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:03:42 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:03:42 -0400
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by GamesController#gameover as */*
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games" for ::1 at 2021-04-19 23:03:42 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games" for ::1 at 2021-04-19 23:04:46 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:04:46 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/games" for ::1 at 2021-04-19 23:04:46 -0400
+Started POST "/games" for ::1 at 2021-04-19 23:04:46 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for GamesController):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:04:49 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "French is an official language in Canada."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 03:04:49.243577"], ["updated_at", "2021-04-20 03:04:49.243577"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 112ms (Views: 0.3ms | ActiveRecord: 4.1ms | Allocations: 7077)
+
+
+Started GET "/games" for ::1 at 2021-04-19 23:05:19 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/controllers/games_controller.rb:6:in `index'
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 988)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:05:59 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:06:12 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:06:18 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:06:19 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:07:23 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (2.3ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What is Cynophobia the fear of?"], ["correct_answer", "Dogs"], ["points", 10], ["created_at", "2021-04-20 03:07:23.437786"], ["updated_at", "2021-04-20 03:07:23.437786"], ["question_type", "multiple"], ["incorrect_answers", "[\"Birds\", \"Flying\", \"Germs\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 94ms (Views: 0.3ms | ActiveRecord: 5.3ms | Allocations: 2587)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:08:37 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:08:38 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:08:39 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:08:39 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:08:44 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (1.3ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Who invented the first ever chocolate bar, in 1847?"], ["correct_answer", "Joseph Fry"], ["points", 10], ["created_at", "2021-04-20 03:08:44.490943"], ["updated_at", "2021-04-20 03:08:44.490943"], ["question_type", "multiple"], ["incorrect_answers", "[\"Andrew Johnson\", \"John Cadbury\", \"John Tyler\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 97ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 2586)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:09:06 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:09:30 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:09:31 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:09:32 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:09:32 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 258)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:09:32 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:09:32 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:09:32 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:10:10 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.8ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "In 2010, Twitter and the United States Library of Congress partnered together to archive every tweet by American citizens."], ["correct_answer", "True"], ["points", 10], ["created_at", "2021-04-20 03:10:10.344756"], ["updated_at", "2021-04-20 03:10:10.344756"], ["question_type", "boolean"], ["incorrect_answers", "[\"False\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 105ms (Views: 0.3ms | ActiveRecord: 7.3ms | Allocations: 12200)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:13 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:13 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:13 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:13 -0400
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 242)
+
+
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 254)
+
+
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 404)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:38 -0400
+Processing by GamesController#gameover as */*
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:38 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 745)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:38 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:38 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:48 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:48 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:48 -0400
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:10:48 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:11:44 -0400
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.6ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?"], ["correct_answer", "Demolition"], ["points", 10], ["created_at", "2021-04-20 03:11:44.344118"], ["updated_at", "2021-04-20 03:11:44.344118"], ["question_type", "multiple"], ["incorrect_answers", "[\"The Dream Team\", \"The Bushwhackers\", \"The British Bulldogs\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 97ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 2586)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:11:47 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:11:47 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:11:47 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:11:47 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 242)
+
+
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:12:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "What was the first ever London Underground line to be built?"], ["correct_answer", "Metropolitan Line"], ["points", 10], ["created_at", "2021-04-20 03:12:30.717190"], ["updated_at", "2021-04-20 03:12:30.717190"], ["question_type", "multiple"], ["incorrect_answers", "[\"Circle Line\", \"Bakerloo Line\", \"Victoria Line\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 98ms (Views: 0.7ms | ActiveRecord: 3.0ms | Allocations: 7132)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:12:33 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:12:33 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:12:33 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:12:33 -0400
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/games_controller.rb:13:in `gameover'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms | Allocations: 4819)
+
+
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms | Allocations: 4051)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:13:in `gameover'
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:13:in `gameover'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 227)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:13:in `gameover'
+  ↳ app/controllers/games_controller.rb:13:in `gameover'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.8ms | Allocations: 7042)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:13:in `gameover'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:14:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   "], ["correct_answer", "Richard Branson"], ["points", 10], ["created_at", "2021-04-20 03:14:04.805977"], ["updated_at", "2021-04-20 03:14:04.805977"], ["question_type", "multiple"], ["incorrect_answers", "[\"Alan Sugar\", \"Donald Trump\", \"Bill Gates\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 109ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 12216)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:14:07 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:14:07 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:14:07 -0400
+Completed 500 Internal Server Error in 90815ms (ActiveRecord: 1.4ms | Allocations: 19144)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:15:38 -0400
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:15:38 -0400
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+Completed 500 Internal Server Error in 2546ms (ActiveRecord: 0.0ms | Allocations: 16411)
+
+
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:15:40 -0400
+Completed 500 Internal Server Error in 1190ms (ActiveRecord: 0.0ms | Allocations: 26505)
+
+
+Completed 500 Internal Server Error in 1202ms (ActiveRecord: 0.0ms | Allocations: 31030)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+Started POST "/questions/choose_game" for ::1 at 2021-04-19 23:15:42 -0400
+Processing by GamesController#gameover as */*
+Completed 500 Internal Server Error in 1554ms (ActiveRecord: 0.0ms | Allocations: 150988)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+  Parameters: {"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>0, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by QuestionsController#choosegame as */*
+  Parameters: {"difficulty"=>"easy", "num_of_questions"=>"1", "category"=>"9", "question"=>{"category"=>"9", "difficulty"=>"easy"}}
+Completed 500 Internal Server Error in 856ms (ActiveRecord: 0.0ms | Allocations: 27645)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("category", "difficulty", "question", "correct_answer", "points", "created_at", "updated_at", "question_type", "incorrect_answers") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["category", "General Knowledge"], ["difficulty", "easy"], ["question", "Which American president appears on a one dollar bill?"], ["correct_answer", "George Washington"], ["points", 10], ["created_at", "2021-04-20 03:15:44.488747"], ["updated_at", "2021-04-20 03:15:44.488747"], ["question_type", "multiple"], ["incorrect_answers", "[\"Thomas Jefferson\", \"Abraham Lincoln\", \"Benjamin Franklin\"]"]]
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:38:in `block in choosegame'
+Completed 200 OK in 92ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 2985)
+
+
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:15:50 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:15:50 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 500 Internal Server Error in 4289ms (ActiveRecord: 0.0ms | Allocations: 17085)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+Completed 500 Internal Server Error in 1563ms (ActiveRecord: 0.0ms | Allocations: 46914)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:16:28 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:16:28 -0400
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:16:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started POST "/games/game_over" for ::1 at 2021-04-19 23:16:28 -0400
+Processing by GamesController#gameover as */*
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.8ms | Allocations: 3888)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+Processing by GamesController#gameover as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+Processing by GamesController#gameover as */*
+Processing by GamesController#gameover as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  Parameters: {"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1, "game"=>{"score"=>10, "game_type"=>"General Knowledge", "time"=>0, "num_of_questions"=>1, "user_id"=>1}}
+  ↳ app/controllers/games_controller.rb:16:in `gameover'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms | Allocations: 4819)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms | Allocations: 3875)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/games_controller.rb:16:in `gameover'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.4ms | Allocations: 5620)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'controller' for Game.):
+  
+app/controllers/games_controller.rb:16:in `gameover'
