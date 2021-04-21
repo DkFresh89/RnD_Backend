@@ -39,10 +39,9 @@ class UsersController < ApplicationController
         # POST /login
     def login
         
-        user = User.find_by(username: params[:username])
-        # byebug
-        if user && user.authenticate(params[:password])
-        token = JsonWebToken.encode({ user_id: user.id }, 'my$ecretK3y', 'HS256')
+        user = User.find_by(username: params[:username], password_digest: params[:password])
+        if user 
+        token = JWT.encode({ user_id: user.id }, 'my$ecretK3y', 'HS256')
         render json: { user: user, token: token }
         else
         render json: { errors: ["Invalid username or password"] }, status: :unauthorized
@@ -76,6 +75,5 @@ class UsersController < ApplicationController
     @current_user.update(bio: params[:bio], image: params[:image])
     render json: @current_user
     end
-
 
 end
