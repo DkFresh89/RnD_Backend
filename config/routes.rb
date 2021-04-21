@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   get '/users', to: 'users#index'
+  patch "/users/game_stats/:id", to: "users#game_stats"
   post '/questions/choose_game', to: 'questions#choosegame'
   post '/games/game_over', to: 'games#gameover'
   # post '/users/new_user', to: 'users#newuser'
@@ -13,6 +14,6 @@ Rails.application.routes.draw do
 
   post "/login", to: "users#login"
   post "/signup", to: "users#signup"
-  get "/show", to: "users#show"
+  get "/me", to: "users#show"
   patch "/me", to: "users#update"
 end

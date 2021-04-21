@@ -8,7 +8,7 @@ class GamesController < ApplicationController
 
     def gameover
         @game = params.permit!()
-        # byebug
+
         new_game = {
             score: @game["score"],
             game_type: @game["game_type"],
@@ -17,8 +17,6 @@ class GamesController < ApplicationController
             user_id: 1
             
         }
-
-        # byebug
 
         Game.create(new_game)
 
