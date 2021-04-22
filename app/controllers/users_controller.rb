@@ -42,8 +42,8 @@ class UsersController < ApplicationController
         user = User.find_by(id: params[:id])
         new_high_score = user.update_high_score
         user.update(high_score: new_high_score)
-        new_rank = user.update_rank
-        updated_user = user.update(rank: new_rank)
+        # new_rank = user.update_rank
+        # user.update(rank: new_rank)
         render json: user
     end
 

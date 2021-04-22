@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/users', to: 'users#index'
   patch "/users/game_stats/:id", to: "users#game_stats"
   post '/questions/choose_game', to: 'questions#choosegame'
-  post '/games/game_over', to: 'games#gameover'
+  post '/games/gameover', to: 'games#gameover'
   # post '/users/new_user', to: 'users#newuser'
   # post '/users/login', to: 'users#login'
 
