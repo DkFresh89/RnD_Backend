@@ -21,4 +21,19 @@ class User < ApplicationRecord
         User.order_by_high_score.find_index(self) + 1
     end
 
+    def total_wins
+        total_score = self.games.sum{|game| game.score}
+        total_questions = self.games.sum{|game| game.num_of_questions}
+        ((total_score.to_f)/(total_questions*10)).round(2)
+    end
+
+    def self.win_ratio
+        all.map do |user| 
+           {
+            user: user,
+            correct_answer_ratio: user.total_wins
+            }
+        end
+    end
+
 end

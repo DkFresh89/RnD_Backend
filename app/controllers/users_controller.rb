@@ -32,10 +32,10 @@ class UsersController < ApplicationController
     end
 
     # GET /me
-    def show 
+    # def show 
 
-    render json: @current_user
-    end
+    # render json: @current_user
+    # end
 
     # PATCH /me
     def game_stats
@@ -46,5 +46,11 @@ class UsersController < ApplicationController
         # user.update(rank: new_rank)
         render json: user
     end
+
+    def top_five
+        top_five_users = User.order_by_high_score.first(5)
+        users_win_ratio = User.win_ratio
+        render json: {top_five_users: top_five_users, users_win_ratio: users_win_ratio}
+    end 
 
 end

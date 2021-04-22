@@ -19,13 +19,12 @@ class GamesController < ApplicationController
 
         Game.create(new_game)
 
-        user = User.find_by(id: @game["user_id"])
-        new_high_score = user.update_high_score
-        user.update(high_score: new_high_score)
-        new_rank = user.update_rank
-        user.update(rank: new_rank)
-        byebug
-        render json: user
+        @user = User.find_by(id: @game["user_id"])
+        new_high_score = @user.update_high_score
+        @user.update(high_score: new_high_score)
+        new_rank = @user.update_rank
+        @user.update(rank: new_rank)
+        render json: @user
     end
 
 end
