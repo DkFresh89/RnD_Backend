@@ -23,12 +23,23 @@ class User < ApplicationRecord
 
     def total_wins
         total_score = self.games.sum{|game| game.score}
-        total_questions = self.games.sum{|game| game.num_of_questions}
+
+        total_questions = self.games.sum do |game| 
+            if game.difficulty == "easy"
+                game.num_of_questions*10
+            elsif game.difficulty == "medium"
+                game.num_of_questions*20
+            else 
+                game.num_of_questions*30
+            end
+        end
+
         if total_questions != 0
-            (((total_score.to_f)/(total_questions*10)).round(2))*100
+            (((total_score.to_f)/(total_questions)).round(2))*100
         else
             0
         end
+
     end
 
     def self.win_ratio

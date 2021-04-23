@@ -14,6 +14,7 @@ class GamesController < ApplicationController
             game_type: @game["game_type"],
             time: @game["time"],
             num_of_questions: @game["num_of_questions"],
+            difficulty: @game["difficulty"],
             user_id: @game["user_id"]          
         }
 
