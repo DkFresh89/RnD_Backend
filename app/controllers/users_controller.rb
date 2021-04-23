@@ -38,18 +38,18 @@ class UsersController < ApplicationController
     # end
 
     # PATCH /me
-    def game_stats
-        user = User.find_by(id: params[:id])
-        new_high_score = user.update_high_score
-        user.update(high_score: new_high_score)
-        # new_rank = user.update_rank
-        # user.update(rank: new_rank)
-        render json: user
-    end
+    # def game_stats
+    #     user = User.find_by(id: params[:id])
+    #     new_high_score = user.update_high_score
+    #     user.update(high_score: new_high_score)
+    #     new_rank = user.update_rank
+    #     user.update(rank: new_rank)
+    #     render json: user
+    # end
 
     def top_five
-        top_five_users = User.order_by_high_score.first(5)
-        users_win_ratio = User.win_ratio
+        top_five_users = User.order_by_high_score.reverse.first(5)
+        users_win_ratio = User.win_ratio.reverse
         render json: {top_five_users: top_five_users, users_win_ratio: users_win_ratio}
     end 
 

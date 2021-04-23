@@ -35,7 +35,7 @@ class QuestionsController < ApplicationController
                 points: 10
             }
 
-            Question.create(question)
+            # Question.create(question)
 
             
 

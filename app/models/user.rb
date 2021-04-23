@@ -24,12 +24,16 @@ class User < ApplicationRecord
     def total_wins
         total_score = self.games.sum{|game| game.score}
         total_questions = self.games.sum{|game| game.num_of_questions}
-        ((total_score.to_f)/(total_questions*10)).round(2)
+        if total_questions != 0
+            (((total_score.to_f)/(total_questions*10)).round(2))*100
+        else
+            0
+        end
     end
 
     def self.win_ratio
-        all.map do |user| 
-           {
+        self.order_by_high_score.map do |user| 
+            {
             user: user,
             correct_answer_ratio: user.total_wins
             }
