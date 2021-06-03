@@ -42,7 +42,7 @@
 #     Question.create(question)
 # end
 
-# # Question.create!(fuck)
+User.create(username: 'Doug', password_digest: '123', high_score: 0, rank: 0)
 
 
 # # byebug
